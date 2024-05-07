@@ -1,0 +1,46 @@
+   /* Estilos personalizados */
+   body {
+    background-color: #f3f4f6; 
+    color: #333;
+    font-family: Arial, sans-serif; 
+}
+.form-group label {
+    color: #474e54; 
+    font-weight: bold; 
+}
+.form-control {
+    background-color: #fff; 
+    color: #474e54; 
+    border-color: #ccc;
+}
+.btn-primary {
+    background-color: #fec445; 
+    border-color: #fec445; 
+    color: #474e54; 
+    font-weight: bold; 
+}
+.btn-primary:hover {
+    background-color: #f8b500; 
+    border-color: #f8b500; 
+}
+/* --------------------------------BOTON WHA------------------------ */
+/* Estilos CSS para el botón de WhatsApp */
+/* Contenedor del botón de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+/* Icono de WhatsApp */
+.whatsapp-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+/* Estilos cuando se pasa el cursor sobre el botón */
+.whatsapp-icon:hover {
+    transform: scale(1.1);
+}

@@ -3,33 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asistente de Ventas</title>
+    <title>Asistente de Venta Digital Team Pro</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <div class="whatsapp-button">
+        <!-- Botón de WhatsApp -->
+        <a href="https://api.whatsapp.com/send?phone=51968458783&text=Hola%20Digital%20Team%20Pro,%20me%20interesan%20tus%20servicios.%20Quisiera%20contactarme%20con%20un%20asesor%20de%20ventas%20y%20programar%20una%20reunión." target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1198px-WhatsApp.svg.png" alt="WhatsApp" class="whatsapp-icon">
+        </a>
+    </div>
     <div class="container">
         <div class="jumbotron text-center">
-            <h1>Bienvenido a nuestra agencia de software</h1>
-            <form id="salesForm">
-                <div class="form-group">
-                    <label for="companyNameInput">Nombre de la empresa:</label>
-                    <input type="text" class="form-control" id="companyNameInput" required>
+            <h1>Bienvenido a DIGITAL TEAM PRO </h1>
+            <form id="salesForm" class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="companyNameInput">Nombre de la empresa:</label>
+                        <input type="text" class="form-control" id="companyNameInput" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phoneNumberInput">Número telefónico:</label>
+                        <input type="tel" class="form-control" id="phoneNumberInput" pattern="[0-9]+" required>
+                        <small class="form-text text-muted">Por favor, ingrese solo números.</small>
+                        <small class="form-text text-muted">Te enviaremos un Mensaje minutos antes de contactarte.</small>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="industryInput">Rubro de la empresa:</label>
-                    <input type="text" class="form-control" id="industryInput" required>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="industryInput">Rubro de la empresa:</label>
+                        <select class="form-control" id="industryInput" required>
+                            <option value="Agricultura">Agricultura</option>
+                            <option value="Construcción">Construcción</option>
+                            <option value="Alimentos y bebidas">Alimentos y bebidas</option>
+                            <option value="Turismo">Turismo</option>
+                            <option value="Finanzas">Finanzas</option>
+                            <option value="Manufactura">Manufactura</option>
+                            <option value="Energía">Energía</option>
+                            <option value="Minería">Minería</option>
+                            <option value="Retail">Retail</option>
+                            <option value="Servicios">Servicios</option>
+                            <option value="Transporte">Transporte</option>
+                            <option value="Telecomunicaciones">Telecomunicaciones</option>
+                            <option value="Medios de comunicación">Medios de comunicación</option>
+                            <option value="Entretenimiento">Entretenimiento</option>
+                            <option value="Consultoría">Consultoría</option>
+                            <option value="Ingeniería">Ingeniería</option>
+                            <option value="Publicidad y marketing">Publicidad y marketing</option>
+                            <option value="Textil y moda">Textil y moda</option>
+                            <option value="Medio ambiente">Medio ambiente</option>
+                            <option value="Bienes raíces">Bienes raíces</option>
+                            <option value="Seguros">Seguros</option>
+                            <option value="Legal">Legal</option>
+                            <option value="Recursos humanos">Recursos humanos</option>
+                            <option value="Salud y belleza">Salud y belleza</option>
+                            <option value="Salud y belleza">Otros</option>
+                            <!-- Puedes continuar agregando más opciones según sea necesario -->
+                            
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactDateTimeInput">Fecha y hora de contacto:</label>
+                        <input type="datetime-local" class="form-control" id="contactDateTimeInput" required>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="phoneNumberInput">Número telefónico:</label>
-                    <input type="tel" class="form-control" id="phoneNumberInput" required>
-                </div>
-                <div class="form-group">
-                    <label for="contactDateTimeInput">Fecha y hora de contacto:</label>
-                    <input type="datetime-local" class="form-control" id="contactDateTimeInput" required>
-                </div>
-                <button id="nextStepButton" type="button" class="btn btn-primary btn-lg">Siguiente</button>
+                <button id="nextStepButton" type="button" class="btn btn-primary btn-lg btn-block">Siguiente</button>
             </form>
+            
         </div>
     </div>
 
